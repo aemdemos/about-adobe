@@ -1,0 +1,9 @@
+{
+    "originUrl": "https://www.example.com",
+    "urls": [
+      {
+        "url": "https://www.adobe.com/about-adobe.html",
+        "source": "NAV"
+      }
+    ]
+  }
