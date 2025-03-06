@@ -1,6 +1,8 @@
 main > .section > div.video-wrapper {
     max-width: unset;
     padding: 0;
+    overflow: hidden;
+    height: 658px;
 }
 
 .video {
@@ -71,8 +73,4 @@ main > .section > div.video-wrapper {
     top: 50%;
     left: calc(50% + 2px);
     transform: translate(-50%, -50%);
-  }
-
-  .video-container + .section {
-    margin-top: -100px;
   }

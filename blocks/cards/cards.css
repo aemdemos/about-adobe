@@ -7,6 +7,14 @@
   grid-gap: 24px;
 }
 
+.cards.big > ul {
+  grid-template-columns: repeat(auto-fill, minmax(457px, 1fr));
+}
+
+.cards.small > ul {
+  grid-template-columns: repeat(auto-fill, minmax(357px, 1fr));
+}
+
 .cards > ul > li {
   border: 1px solid #dadada;
   background-color: var(--background-color);
