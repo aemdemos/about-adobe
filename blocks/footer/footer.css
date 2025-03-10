@@ -1,6 +1,6 @@
 footer {
-  background-color: #F8F8F8;
-  font-size: 12px;
+  /* background-color: #F8F8F8;
+  font-size: 12px; */
 }
 
 footer .footer > div {
@@ -14,12 +14,12 @@ footer .footer p {
 }
 
 footer a:any-link {
-  color: #4b4b4b;
-  text-decoration: none;
+  /* color: #4b4b4b;
+  text-decoration: none; */
 }
 
 footer a:any-link:hover {
-  color: #264dea;
+  /* color: #264dea; */
 }
 
 @media (width >= 900px) {
@@ -42,7 +42,7 @@ footer div > ul > li {
   flex: 1;
 }
 
-footer div > ul > li > ul > li {
+/* footer div > ul > li > ul > li {
   font-size: 14px;
   font-weight: 700;
   margin-top: 20px;
@@ -56,11 +56,12 @@ footer div > ul > li > ul > li > ul > li {
   font-size: 12px;
   font-weight: 400;
   margin-bottom: 5px;
-}
+}*/
 
 .footer-placeholder img {
-  width: 1400px;
+  /* width: 1400px;
   height: auto;
   margin-top: 30px;
-  margin-left: -10px;
+  margin-left: -10px; */
+  display: none;
 }

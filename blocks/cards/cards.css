@@ -1,5 +1,5 @@
 .cards.big {
-  padding: 0 100px;
+  /* padding: 0 100px; */
 }
 
 .cards > ul {
@@ -7,8 +7,13 @@
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(357px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
   grid-gap: 32px;
+}
+
+.cards > ul > li {
+  border: 1px solid #ccc;
+  padding: 10px;
 }
 
 .cards .cards-card-body {
@@ -22,14 +27,14 @@
 }
 
 .cards.big .cards-card-body {
-  display: grid;
+  /* display: grid;
   grid-template-areas:
     'icon title'
     'text text'
     'button button';
   grid-template-columns: 50px 430px;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 20px; */
 }
 
 .cards.big .cards-card-body img {

@@ -1,8 +1,8 @@
 main > .section > div.video-wrapper {
-    max-width: unset;
-    padding: 0;
+    /* max-width: unset; */
+    /* padding: 0;
     overflow: hidden;
-    height: 552px;
+    height: 552px; */
 }
 
 .video {
@@ -11,7 +11,7 @@ main > .section > div.video-wrapper {
   
   .video[data-embed-loaded='false']:not(.placeholder) {
     /* reserve an approximate space to avoid extensive layout shifts */
-    aspect-ratio: 16 / 9;
+    /* aspect-ratio: 16 / 9; */
   }
   
   .video > div {
@@ -24,17 +24,17 @@ main > .section > div.video-wrapper {
   }
   
   .video .video-placeholder {
-    width: 100%;
+    /* width: 100%;
     aspect-ratio: 16 / 9;
-    position: relative;
+    position: relative; */
   }
   
   .video .video-placeholder > * {
-    display: flex;
+    /* display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
-    inset: 0;
+    inset: 0; */
   }
   
   .video[data-embed-loaded='true'] .video-placeholder,
@@ -61,7 +61,7 @@ main > .section > div.video-wrapper {
   }
   
   .video .video-placeholder-play button::before {
-    content: '';
+    /* content: '';
     display: block;
     box-sizing: border-box;
     position: absolute;
@@ -72,5 +72,5 @@ main > .section > div.video-wrapper {
     border-left: 18px solid;
     top: 50%;
     left: calc(50% + 2px);
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
   }
