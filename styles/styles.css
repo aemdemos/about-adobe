@@ -10,18 +10,6 @@
  * OF ANY KIND, either express or implied. See the License for the specific language
  * governing permissions and limitations under the License.
  */
- @font-face {
-  font-family: "adobe-clean", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "adobe-clean", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
 :root {
   --background-color: white;
   --light-color: #f8f8f8;
@@ -49,8 +37,8 @@
     --body-font-size-m: 18px;
     --body-font-size-s: 16px;
     --body-font-size-xs: 10.72px;
-    --heading-font-size-xxl: 36px;
-    --heading-font-size-xl: 36px;
+    --heading-font-size-xxl: 32px;
+    --heading-font-size-xl: 26px;
     --heading-font-size-l: 18.72px;
     --heading-font-size-m: 16px;
     --heading-font-size-s: 13.28px;
@@ -225,29 +213,30 @@ main>.section:first-of-type {
 @media (width>=900px) {
   main>.section>div {
     padding: 0 32px;
+    margin-top: 60px;
   }
 }
 
 /* section metadata */
 main .section.light, main .section.highlight {
-  background-color: var(--light-color);
+  /* background-color: var(--light-color);
   margin: 0;
-  padding: 40px 0;
+  padding: 40px 0; */
 }
 
 main .section.dark {
-  background-color: #262530;
-  color: #fff;
+  /* background-color: #262530;
+  color: #fff; */
 }
 
 main > .section > div.default-content-wrapper {
-  width: 800px;
+  /* width: 800px;
   text-align: center;
   padding-top: 95px;
-  padding-bottom: 75px;
+  padding-bottom: 75px; */
 }
 
 main > .section.dark.cards-container > div.default-content-wrapper {
-  padding-top: 40px;
-  padding-bottom: 60px;
+  /* padding-top: 40px;
+  padding-bottom: 60px; */
 }

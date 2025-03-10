@@ -30,7 +30,7 @@ main > .section > div.tabs-wrapper > div.tabs.block {
 }
 
 .tabs .tabs-list button {
-  flex: 0 0 max-content;
+  /* flex: 0 0 max-content;
   margin: 0;
   padding: 0.5em;
   color: #707070;
@@ -43,12 +43,12 @@ main > .section > div.tabs-wrapper > div.tabs.block {
   border: 0;
   border-bottom: 1px solid #dadada;
   border-radius: 0;
-  font-size: 16px;
+  font-size: 16px; */
 }
 
 .tabs.dates .tabs-list button {
-  color: #bcbcbc;
-  border: 0;
+  /* color: #bcbcbc;
+  border: 0; */
 }
 
 .tabs .tabs-list button p {
@@ -56,18 +56,18 @@ main > .section > div.tabs-wrapper > div.tabs.block {
 }
 
 .tabs .tabs-list button[aria-selected='true'] {
-  border-bottom: 2px solid #2680EB;
+  /* border-bottom: 2px solid #2680EB;
   cursor: initial;
-  color: #000;
+  color: #000; */
 }
 
 
 .tabs.dates .tabs-list button[aria-selected='true'] {
-  font-weight: 700;
+  /* font-weight: 700; */
 }
 
 .dark .tabs .tabs-list button[aria-selected='true'] {
-  color: #fff;
+  /* color: #fff; */
 }
 
 .tabs .tabs-panel {
@@ -79,7 +79,7 @@ main > .section > div.tabs-wrapper > div.tabs.block {
 }
 
 .tabs.dates .tabs-panel {
-  border-top: 1px solid #4b4b4b;
+  /* border-top: 1px solid #4b4b4b; */
 }
 
 .tabs .tabs-panel[aria-hidden='true'] {
