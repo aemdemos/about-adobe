@@ -1,0 +1,105 @@
+main > .section > div.tabs-wrapper {
+  max-width: unset;
+}
+
+main > .section > div.tabs-wrapper > div.tabs.block {
+  max-width: 1440px;
+  margin: auto;
+  font-size: var(--body-font-size-s);
+}
+
+.tabs .tabs-list {
+  display: flex;
+  gap: 0.5ch;
+  max-width: 100%;
+  font-size: var(--body-font-size-xs);
+  overflow-x: auto;
+  justify-content: center;
+}
+
+@media (width >= 600px) {
+  .tabs .tabs-list {
+    font-size: var(--body-font-size-s);
+  }
+}
+
+@media (width >= 900px) {
+  .tabs .tabs-list {
+    font-size: var(--body-font-size-m);
+  }
+}
+
+.tabs .tabs-list button {
+  flex: 0 0 max-content;
+  margin: 0;
+  padding: 0.5em;
+  color: #707070;
+  line-height: unset;
+  text-align: initial;
+  text-overflow: unset;
+  overflow: unset;
+  white-space: unset;
+  background-color: unset;
+  border: 0;
+  border-bottom: 1px solid #dadada;
+  border-radius: 0;
+  font-size: 16px;
+}
+
+.tabs.dates .tabs-list button {
+  color: #bcbcbc;
+  border: 0;
+}
+
+.tabs .tabs-list button p {
+  margin: 0;
+}
+
+.tabs .tabs-list button[aria-selected='true'] {
+  border-bottom: 2px solid #2680EB;
+  cursor: initial;
+  color: #000;
+}
+
+
+.tabs.dates .tabs-list button[aria-selected='true'] {
+  font-weight: 700;
+}
+
+.dark .tabs .tabs-list button[aria-selected='true'] {
+  color: #fff;
+}
+
+.tabs .tabs-panel {
+  margin-top: -1px;
+  padding: 24px;
+  border-top: 1px solid #dadada;
+  overflow: auto;
+  text-align: center;
+}
+
+.tabs.dates .tabs-panel {
+  border-top: 1px solid #4b4b4b;
+}
+
+.tabs .tabs-panel[aria-hidden='true'] {
+  display: none;
+}
+
+.tabs.dates .tabs-panel ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+}
+
+.tabs.dates .tabs-panel ul li {
+  flex: 0 0 378px;
+  height: 133px;
+  text-align: left;
+  margin: 16px;
+}
+
+.tabs.dates .tabs-panel ul li strong {
+  font-size: 36px; 
+}

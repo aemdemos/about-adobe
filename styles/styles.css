@@ -10,6 +10,18 @@
  * OF ANY KIND, either express or implied. See the License for the specific language
  * governing permissions and limitations under the License.
  */
+ @font-face {
+  font-family: "adobe-clean", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "adobe-clean", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
 :root {
   --background-color: white;
   --light-color: #f8f8f8;
@@ -17,8 +29,8 @@
   --text-color: #131313;
   --link-color: #3b63fb;
   --link-hover-color: #1d3ecf;
-  --body-font-family: "-apple-system", "system-ui", "BlinkMacSystemFont", "Segoe UI", "Open Sans", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
-  --heading-font-family: "-apple-system", "system-ui", "BlinkMacSystemFont", "Segoe UI", "Open Sans", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+  --body-font-family: 'adobe-clean', sans-serif;
+  --heading-font-family: 'adobe-clean', sans-serif;
   --body-font-size-m: 16px;
   --body-font-size-s: 13.28px;
   --body-font-size-xs: 10.72px;
@@ -34,11 +46,11 @@
 /* fallback fonts */
 @media (width>=900px) {
   :root {
-    --body-font-size-m: 16px;
-    --body-font-size-s: 13.28px;
+    --body-font-size-m: 18px;
+    --body-font-size-s: 16px;
     --body-font-size-xs: 10.72px;
-    --heading-font-size-xxl: 32px;
-    --heading-font-size-xl: 24px;
+    --heading-font-size-xxl: 36px;
+    --heading-font-size-xl: 36px;
     --heading-font-size-l: 18.72px;
     --heading-font-size-m: 16px;
     --heading-font-size-s: 13.28px;
@@ -73,7 +85,7 @@ header .header[data-block-status="loaded"], footer .footer[data-block-status="lo
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin-top: 0.8em;
+  margin-top: 0;
   margin-bottom: 0.25em;
   font-family: var(--heading-font-family);
   font-weight: 600;
@@ -144,25 +156,24 @@ a.button:any-link, button {
   display: inline-block;
   max-width: 100%;
   margin: 12px 0;
-  border: 2px solid transparent;
+  border: 2px solid #000;
   border-radius: 2.4em;
-  padding: 0.5em 1.2em;
+  padding: 4px 15px;
   font-family: var(--body-font-family);
+  font-size: 15px;
   font-style: normal;
-  font-weight: 500;
   line-height: 1.25;
   text-align: center;
   text-decoration: none;
-  background-color: var(--link-color);
-  color: var(--background-color);
   cursor: pointer;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  color: #000;
 }
 
 a.button:hover, a.button:focus, button:hover, button:focus {
-  background-color: var(--link-hover-color);
+  background-color: #5C5B64;
   cursor: pointer;
 }
 
@@ -175,6 +186,11 @@ a.button.secondary, button.secondary {
   background-color: unset;
   border: 2px solid currentcolor;
   color: var(--text-color);
+}
+
+.dark a.button:any-link, .dark button {
+  color: #fff;
+  border-color: #fff;
 }
 
 main img {
@@ -222,5 +238,16 @@ main .section.light, main .section.highlight {
 main .section.dark {
   background-color: #262530;
   color: #fff;
-  padding-top: 50px;
+}
+
+main > .section > div.default-content-wrapper {
+  width: 800px;
+  text-align: center;
+  padding-top: 95px;
+  padding-bottom: 75px;
+}
+
+main > .section.dark.cards-container > div.default-content-wrapper {
+  padding-top: 40px;
+  padding-bottom: 60px;
 }

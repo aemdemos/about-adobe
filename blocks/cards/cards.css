@@ -1,35 +1,71 @@
+.cards.big {
+  padding: 0 100px;
+}
+
 .cards > ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
-  grid-gap: 24px;
-}
-
-.cards.big > ul {
-  grid-template-columns: repeat(auto-fill, minmax(457px, 1fr));
-}
-
-.cards.small > ul {
   grid-template-columns: repeat(auto-fill, minmax(357px, 1fr));
-}
-
-.cards > ul > li {
-  border: 1px solid #dadada;
-  background-color: var(--background-color);
+  grid-gap: 32px;
 }
 
 .cards .cards-card-body {
   margin: 16px;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .cards .cards-card-image {
   line-height: 0;
 }
 
+.cards.big .cards-card-body {
+  display: grid;
+  grid-template-areas:
+    'icon title'
+    'text text'
+    'button button';
+  grid-template-columns: 50px 430px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.cards.big .cards-card-body img {
+  height: 34px;
+  width: auto;
+}
+
+.cards.big .cards-card-body > p {
+  margin: 0;
+}
+
+.cards.big .cards-card-body > p:nth-of-type(1) {
+  grid-area: icon;
+}
+
+.cards.big .cards-card-body > h2:nth-of-type(1) {
+  grid-area: title;
+  margin: 0;
+}
+
+.cards.big .cards-card-body > p:nth-of-type(2) {
+  grid-area: text;
+  margin-top: 10px;
+}
+
+.cards.big .cards-card-body > p:nth-of-type(3) {
+  grid-area: button;
+  margin-top: 10px;
+}
+
 .cards > ul > li img {
   width: 100%;
-  aspect-ratio: 4 / 3;
   object-fit: cover;
+}
+
+.cards.small {
+  font-size: var(--body-font-size-s);
+  margin-bottom: 90px;
 }

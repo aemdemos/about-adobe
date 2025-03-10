@@ -6,6 +6,15 @@ header .nav-wrapper {
   position: fixed;
 }
 
+header .nav-wrapper::after {
+  content: "";
+  display: block;
+  height: 1px;
+  border-bottom: 1px solid #eaeaea;
+  position: relative;
+  bottom: 45px;
+}
+
 header nav {
   box-sizing: border-box;
   display: grid;
@@ -36,7 +45,7 @@ header nav[aria-expanded='true'] {
     justify-content: space-between;
     gap: 0 32px;
     max-width: 1440px;
-    padding: 0 32px 32px;
+    padding: 0 32px 42px;
   }
 
   header nav[aria-expanded='true'] {
@@ -51,7 +60,12 @@ header nav p {
 }
 
 header nav a:any-link {
-  color: currentcolor;
+  color: #2c2c2c;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  color: #264dea;
 }
 
 /* hamburger */
@@ -145,7 +159,7 @@ header .nav-brand {
 }
 
 header nav .nav-brand img {
-  width: 55px;
+  width: 65px;
   height: auto;
 }
 
@@ -222,6 +236,26 @@ header nav .nav-sections ul > li > ul > li {
     display: flex;
     gap: 24px;
     margin: 0;
+    height: 60px;
+    align-items: center;
+  }
+
+  header nav .nav-sections ul > li {
+    height: 100%;
+    align-content: center;
+  }
+
+  header nav .nav-sections ul > li:nth-of-type(1) {
+    padding-left: 20px;
+    padding-right: 20px;
+    border-left: 1px solid #e1e1e1;
+    border-right: 1px solid #e1e1e1;
+  }
+
+  header nav .nav-sections ul > li:nth-of-type(2) {
+    border-bottom: 2px solid #000;
+    color: #000;
+    font-weight: 600;
   }
 
   header nav .nav-sections .default-content-wrapper > ul > li {
@@ -265,4 +299,9 @@ header nav .nav-sections ul > li > ul > li {
 /* tools */
 header nav .nav-tools {
   grid-area: tools;
+}
+
+header nav .nav-tools img {
+  height: 30px;
+  width: auto;
 }
