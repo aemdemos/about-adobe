@@ -304,4 +304,5 @@ header nav .nav-tools {
 header nav .nav-tools img {
   height: 30px;
   width: auto;
+  display: none;
 }
