@@ -49,8 +49,8 @@
     --body-font-size-m: 18px;
     --body-font-size-s: 16px;
     --body-font-size-xs: 10.72px;
-    --heading-font-size-xxl: 36px;
-    --heading-font-size-xl: 36px;
+    --heading-font-size-xxl: 44px;
+    --heading-font-size-xl: 28px;
     --heading-font-size-l: 18.72px;
     --heading-font-size-m: 16px;
     --heading-font-size-s: 13.28px;
@@ -243,8 +243,8 @@ main .section.dark {
 main > .section > div.default-content-wrapper {
   width: 800px;
   text-align: center;
-  padding-top: 95px;
-  padding-bottom: 75px;
+  padding-top: 39px;
+  padding-bottom: 31px;
 }
 
 main > .section.dark.cards-container > div.default-content-wrapper {
