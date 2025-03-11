@@ -10,18 +10,6 @@
  * OF ANY KIND, either express or implied. See the License for the specific language
  * governing permissions and limitations under the License.
  */
- @font-face {
-  font-family: "adobe-clean", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "adobe-clean", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
 :root {
   --background-color: white;
   --light-color: #f8f8f8;
@@ -29,8 +17,8 @@
   --text-color: #131313;
   --link-color: #3b63fb;
   --link-hover-color: #1d3ecf;
-  --body-font-family: 'adobe-clean', sans-serif;
-  --heading-font-family: 'adobe-clean', sans-serif;
+  --body-font-family: 'Inter', sans-serif;
+  --heading-font-family: 'Inter', sans-serif;
   --body-font-size-m: 16px;
   --body-font-size-s: 13.28px;
   --body-font-size-xs: 10.72px;
@@ -49,8 +37,8 @@
     --body-font-size-m: 18px;
     --body-font-size-s: 16px;
     --body-font-size-xs: 10.72px;
-    --heading-font-size-xxl: 36px;
-    --heading-font-size-xl: 36px;
+    --heading-font-size-xxl: 50px;
+    --heading-font-size-xl: 32px;
     --heading-font-size-l: 18.72px;
     --heading-font-size-m: 16px;
     --heading-font-size-s: 13.28px;
@@ -156,7 +144,7 @@ a.button:any-link, button {
   display: inline-block;
   max-width: 100%;
   margin: 12px 0;
-  border: 2px solid #000;
+  /* border: 2px solid #000; */
   border-radius: 2.4em;
   padding: 4px 15px;
   font-family: var(--body-font-family);
@@ -169,11 +157,13 @@ a.button:any-link, button {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  color: #000;
+  color: #fff;
+  background-color: #53BD95;
+  font-weight: 400;
+  padding: 15px 25px;
 }
 
 a.button:hover, a.button:focus, button:hover, button:focus {
-  background-color: #5C5B64;
   cursor: pointer;
 }
 
@@ -191,6 +181,10 @@ a.button.secondary, button.secondary {
 .dark a.button:any-link, .dark button {
   color: #fff;
   border-color: #fff;
+}
+
+main {
+  margin-top: -110px;
 }
 
 main img {
@@ -236,8 +230,12 @@ main .section.light, main .section.highlight {
 }
 
 main .section.dark {
-  background-color: #262530;
+  background-color: #212938;
   color: #fff;
+}
+
+main .section.gradient-green {
+  background: linear-gradient(to right, #FFFEFE 0%, #FFFEFE 30%, #D7F0E5 100%);
 }
 
 main > .section > div.default-content-wrapper {
