@@ -69,3 +69,8 @@
   font-size: var(--body-font-size-s);
   margin-bottom: 90px;
 }
+
+.cards.small .cards-card-image {
+  border-radius: 20px;
+  overflow: hidden;
+}

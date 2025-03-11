@@ -41,7 +41,7 @@ main > .section.hero > div {
 .section.hero {
   padding-top: 140px;
   padding-bottom: 100px;
-  background: linear-gradient(-45deg, #DAEFEB 0%, #F3F2EE 30%, #F3F2EE 70%, #DAEFEB 100%);
+  background: linear-gradient(-60deg, #D8F1E6 0%, #D8F1E6 20%, #F3F2EE 30%, #F3F2EE 70%, #D8F1E6 90%, #D8F1E6 100%);
 }
 
 .columns.hero > div > div:first-of-type > * {
@@ -64,6 +64,7 @@ main > .section.hero > div {
   height: 310px;
   width: auto;
   border-radius: 16px;
+  border: 50px solid rgba(84, 190, 150, 0.5);
 }
 
 .section.products .columns > div > div:nth-of-type(2) img {
