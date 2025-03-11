@@ -21,6 +21,17 @@
   line-height: 0;
 }
 
+.cards.small .cards-card-image {
+  border-radius: 16px;
+  overflow: hidden;
+  height: 212px;
+}
+
+.cards.small h3 {
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
 .cards.big .cards-card-body {
   display: grid;
   grid-template-areas:
@@ -67,5 +78,5 @@
 
 .cards.small {
   font-size: var(--body-font-size-s);
-  margin-bottom: 90px;
+  /* margin-bottom: 90px; */
 }
